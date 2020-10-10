@@ -4,7 +4,7 @@ There are two main hardare components that need to be involved in the Mesh netwo
 1. One is running the Mesh on the Thingy:52 devices - you may see it [below](#here "Goto Documentation on how to successfully run examples on Thingy:52 devices")
 2. The other part is focused on having the Mesh on the nRF52840 -   [here ](#here "Goto Documentation on how to successfully run examples on Thingy:52 devices") it is
 
-Documentation on how to successfully run examples on Thingy:52 devices<a name="TOP"></a>
+1.Documentation on how to successfully run examples on Thingy:52 devices<a name="TOP"></a>
 ===================
 Here is an explanation on how to load the provided code on the Thingy devices.
 ## Hardware needed ##
@@ -63,4 +63,24 @@ Step 9: The following needs to be done from Segger Options (Tools -> Options):
 - And [here] (https://www.youtube.com/watch?v=XthbU9NP0Yg) is an video example on how the addresses can be assigned from the phone, to achieve a Light Switch – Light Bulb(s) scenario
 - Finally, the boars are loaded with a **Client – Server** model. Depending on the addresses assignment from the *nRF Mesh App*, some boards can act as a switch (publisher) and the other(s) as light bulb (subscriber, client).
 - ***Bonus***: by having a look in the C code, we may notice that the relay feature is enabled. So now, if we wish to have an end-to-end communication over multiple Thingy’s as hops, this software enables messages forwarding through them. 
+
+2.Documentation on how to successfully run examples on nRF52840 development boards<a name="TOP"></a>
+===================
+The Publish - Subscribe communication between the development boards implies 2 steps:
+
+1. On the pc:
+- load the appropriate code to the Thingy:
+- run the project found in \nrf5_SDK_for_Mesh_v320\examples\thingy52-mesh-provisioning-demo-master\thingy_provisioning_demo
+- load the appropriate code to the DevBoard:
+  - SERVER:
+    - For the board which will be turning the _LED_ on, navigate to  \nrf5_SDK_for_Mesh_v320\examples\light_switch\server and choose the appropriate project.  
+  - CLIENT:
+    - For the board which will be the _SWITCH_, navigate to: \nrf5_SDK_for_Mesh_v320\examples\light_switch\client and choose the appropriate project. 
+
+2. In the phone App:
+- if (node == LED) then from „Elements“ → Generic On OFF Server → First from „Bound App Keys → click „Bind Key“. Then, „Subscriptions“ →Subscribe → then choose an address*  
+- if (node == SWITCH) then from „Elements“ → Generic On OFF Client → First from „Bound App Keys → click „Bind Key“. Then, „Publish“ →Publish Address → then choose an address*  
+
+*This must be the same address
+
 
