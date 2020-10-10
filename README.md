@@ -1,5 +1,5 @@
 # Mesh-Network-Updated
-This is an updated version of the previous Mesh nwteork Project. This contains functional code, in order to run the Mesh Network on Nording Thingy:52 devices, with Nordic nRF52840 Development Boards as end devices.  
+This is an updated version of the previous Mesh Network Project. This contains functional code, in order to run the Mesh Network on Nording Thingy:52 devices, with Nordic nRF52840 Development Boards as end devices.  
 There are two main hardare components that need to be involved in the Mesh network. Therefore this project is separated into two parts:
 1. One is running the Mesh on the Thingy:52 devices - you may see it [below](#here "Goto Documentation on how to successfully run examples on Thingy:52 devices")
 2. The other part is focused on having the Mesh on the nRF52840 -   [here ](#here "Goto Documentation on how to successfully run examples on Thingy:52 devices") it is
