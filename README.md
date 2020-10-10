@@ -1,11 +1,10 @@
 # Mesh-Network-Updated
 This is an updated version of the previous Mesh Network Project. This contains functional code, in order to run the Mesh Network on Nordinc Thingy:52 devices, with Nordic nRF52840 Development Boards as end devices.  
 There are two main hardare components that need to be involved in the Mesh network. Therefore this project is separated into two parts:
-1. One is running the Mesh on the Thingy:52 devices - you may see it [below](#here "Goto 1.) Documentation on how to successfully run examples on Thingy:52 devices")
-2. The other part is focused on having the Mesh on the nRF52840 -   [here ](#here "Goto 2.) Documentation on how to successfully run examples on nRF52840 development boards") it is
+1. One is running the Mesh on the Thingy:52 devices - you may see it [below](#here "Goto 1. Documentation on how to successfully run examples on Thingy:52 devices")
+2. The other part is focused on having the Mesh on the nRF52840 -   [here ](#here "Goto 2. Documentation on how to successfully run examples on nRF52840 development boards") it is
 
-1.) Documentation on how to successfully run examples on Thingy:52 devices<a name="TOP"></a>
-===================
+# 1. Documentation on how to successfully run examples on Thingy:52 devices # 
 Here is an explanation on how to load the provided code on the Thingy devices.
 ## Hardware needed ##
 - 2 x [Thingy:52](https://www.nordicsemi.com/Software-and-tools/Prototyping-platforms/Nordic-Thingy-52)
@@ -64,8 +63,8 @@ Step 9: The following needs to be done from Segger Options (Tools -> Options):
 - Finally, the boars are loaded with a **Client – Server** model. Depending on the addresses assignment from the *nRF Mesh App*, some boards can act as a switch (publisher) and the other(s) as light bulb (subscriber, client).
 - ***Bonus***: by having a look in the C code, we may notice that the relay feature is enabled. So now, if we wish to have an end-to-end communication over multiple Thingy’s as hops, this software enables messages forwarding through them. 
 
-2.) Documentation on how to successfully run examples on nRF52840 development boards<a name="TOP"></a>
-===================
+# 2. Documentation on how to successfully run examples on nRF52840 development boards #  
+
 The Publish - Subscribe communication between the development boards implies 2 steps:
 
 1. On the pc:
