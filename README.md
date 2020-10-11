@@ -46,7 +46,7 @@ In order to run the default SW on Thingy:
 ### Next Steps ###
 In order to run the Mesh Software, on Thingy:52:
 - After discovering the Thingy:52 features,  the Mesh firmware can be loaded into the boards, so that they can participate in a Mesh network. This will give the user the possibility of assigning the boards different individual or group addresses, so that controlling multiple Thingy’s from the phone can be achieved easily  
--To achieve this, the Thingy:52 devices need to be erased of this initial firmware and loaded with a new one. For this, the mentioned tutorial in [this link] (https://github.com/NordicPlayground/thingy52-mesh-provisioning-demo) shall be followed. 
+- To achieve this, the Thingy:52 devices need to be erased of this initial firmware and loaded with a new one. For this, the mentioned tutorial in [this link] (https://github.com/NordicPlayground/thingy52-mesh-provisioning-demo) shall be followed. 
 - As I mentioned in the the HW setup part, the way to load the code on Thingy’s is via the SWD cable.
 
  #### Additions ####
@@ -69,7 +69,7 @@ The Publish - Subscribe communication between the development boards implies 2 s
 
 1. On the pc:
 - load the appropriate code to the Thingy:
-- run the project found in \nrf5_SDK_for_Mesh_v320\examples\thingy52-mesh-provisioning-demo-master\thingy_provisioning_demo
+- run the project found in \nrf5_SDK_for_Mesh_v320\examples\thingy52-mesh-provisioning-demo-master\thingy_provisioning_demo - as already discussed in the previous section
 - load the appropriate code to the DevBoard:
   - SERVER:
     - For the board which will be turning the _LED_ on, navigate to  \nrf5_SDK_for_Mesh_v320\examples\light_switch\server and choose the appropriate project.  
@@ -77,8 +77,8 @@ The Publish - Subscribe communication between the development boards implies 2 s
     - For the board which will be the _SWITCH_, navigate to: \nrf5_SDK_for_Mesh_v320\examples\light_switch\client and choose the appropriate project. 
 
 2. In the phone App:
-- if (node == LED) then from „Elements“ → Generic On OFF Server → First from „Bound App Keys → click „Bind Key“. Then, „Subscriptions“ →Subscribe → then choose an address*  
-- if (node == SWITCH) then from „Elements“ → Generic On OFF Client → First from „Bound App Keys → click „Bind Key“. Then, „Publish“ →Publish Address → then choose an address*  
+- if (node == LED) then from „Elements“ → Generic On OFF Server → First from „Bound App Keys → click „Bind Key“. Then, „Subscriptions“ → Subscribe → then choose an address*  
+- if (node == SWITCH) then from „Elements“ → Generic On OFF Client → First from „Bound App Keys → click „Bind Key“. Then, „Publish“ → Publish Address → then choose an address*  
 
 *This must be the same address
 
