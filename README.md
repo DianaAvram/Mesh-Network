@@ -52,7 +52,7 @@ In order to run the Mesh Software, on Thingy:52:
  #### Additions ####
 Additions to the already mentioned steps are the following:
 
-Step 5. Clone this repo into \examples\ --> it refers to nrf5_SDK_for_Mesh_v320\examples
+Step 5. Clone this repo into \examples\ --> it refers to nrf5_SDK_for_Mesh_v320\examples  
 Step 9: The following needs to be done from Segger Options (Tools -> Options):  
 ------------------------------- insert picture here -------------------
 
