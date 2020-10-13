@@ -82,4 +82,11 @@ The Publish - Subscribe communication between the development boards implies 2 s
 
 *This must be the same address
 
+# Important information: #
+
+## Mapping between PCA number and  SOC number ##
+
+When programming a development board, we may wonder what's the connection between the board's name and the according code.   
+Hre is the mapping:  https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_gsg_ses%2FUG%2Fgsg%2Fchips_and_sds.html  
+
 
