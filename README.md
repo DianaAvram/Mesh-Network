@@ -40,7 +40,7 @@ In order to run the default SW on Thingy:
 - Afterwards, turn on the Thingy:52’s – there is a small switch on the bottom left side. Now, the Thingy:52 will start to advertise 
 - Next, activate Bluetooth and location from your phone and enter the Nordic Thingy Application. Now, your phone will be looking for available devices, to connect to
 - From now on, you should be able to connect to each new Thingy, give them names and discover all its sensors data in real time.  
------------------------insert photo here------------------------------------------
+- Here is the [Nordic Thingy:52 documentation](https://infocenter.nordicsemi.com/pdf/Thingy_UG_v1.0.pdf), including all its features and examples
 - All this information is kept after turning off the Thingy’s. To erase the firmware, please have a look at the next steps
 
 ### Next Steps ###
