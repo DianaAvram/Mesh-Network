@@ -46,7 +46,7 @@ In order to run the default SW on Thingy:
 ### Next Steps ###
 In order to run the Mesh Software, on Thingy:52:
 - After discovering the Thingy:52 features,  the Mesh firmware can be loaded into the boards, so that they can participate in a Mesh network. This will give the user the possibility of assigning the boards different individual or group addresses, so that controlling multiple Thingy’s from the phone can be achieved easily  
-- To achieve this, the Thingy:52 devices need to be erased of this initial firmware and loaded with a new one. For this, the mentioned tutorial in [this link] (https://github.com/NordicPlayground/thingy52-mesh-provisioning-demo) shall be followed. 
+- To achieve this, the Thingy:52 devices need to be erased of this initial firmware and loaded with a new one. For this, the mentioned tutorial in [this link](https://github.com/NordicPlayground/thingy52-mesh-provisioning-demo) shall be followed. 
 - As I mentioned in the the HW setup part, the way to load the code on Thingy’s is via the SWD cable.
 
  #### Additions ####
@@ -56,7 +56,7 @@ Step 5. Clone this repo into \examples\ --> it refers to nrf5_SDK_for_Mesh_v320\
 
  #### Last thoughts ####
 
-- After successfully completing the steps and loading the code on the Thingys, their provisioning needs to be made, from the phone. That is, assigning them with addresses. This is done using the *nRF Mesh App*, available [here] (https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfmeshprovisioner&hl=de)
+- After successfully completing the steps and loading the code on the Thingys, their provisioning needs to be made, from the phone. That is, assigning them with addresses. This is done using the *nRF Mesh App*, available [here](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfmeshprovisioner&hl=de)
 - And [here] (https://www.youtube.com/watch?v=XthbU9NP0Yg) is an video example on how the addresses can be assigned from the phone, to achieve a Light Switch – Light Bulb(s) scenario
 - Finally, the boars are loaded with a **Client – Server** model. Depending on the addresses assignment from the *nRF Mesh App*, some boards can act as a switch (publisher) and the other(s) as light bulb (subscriber, client).
 - ***Bonus***: by having a look in the C code, we may notice that the relay feature is enabled. So now, if we wish to have an end-to-end communication over multiple Thingy’s as hops, this software enables messages forwarding through them. 
