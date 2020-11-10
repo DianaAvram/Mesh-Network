@@ -57,7 +57,7 @@ Step 5. Clone this repo into \examples\ --> it refers to nrf5_SDK_for_Mesh_v320\
  #### Last thoughts ####
 
 - After successfully completing the steps and loading the code on the Thingys, their provisioning needs to be made, from the phone. That is, assigning them with addresses. This is done using the *nRF Mesh App*, available [here](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfmeshprovisioner&hl=de)
-- And [here] (https://www.youtube.com/watch?v=XthbU9NP0Yg) is an video example on how the addresses can be assigned from the phone, to achieve a Light Switch – Light Bulb(s) scenario
+- And [here](https://www.youtube.com/watch?v=XthbU9NP0Yg) is an video example on how the addresses can be assigned from the phone, to achieve a Light Switch – Light Bulb(s) scenario
 - Finally, the boars are loaded with a **Client – Server** model. Depending on the addresses assignment from the *nRF Mesh App*, some boards can act as a switch (publisher) and the other(s) as light bulb (subscriber, client).
 - ***Bonus***: by having a look in the C code, we may notice that the relay feature is enabled. So now, if we wish to have an end-to-end communication over multiple Thingy’s as hops, this software enables messages forwarding through them. 
 
